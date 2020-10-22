@@ -1,0 +1,26 @@
+###
+GET http://localhost:3000/api/products
+
+###
+GET http://localhost:3000/api/products/5f91d87f5563423ac8c4918b
+
+###
+POST http://localhost:3000/api/products/
+content-type: application/json
+
+{
+    "name": "Monitor",
+    "brand": "LG",
+    "price": "215"
+}
+
+###
+PUT http://localhost:3000/api/products/5f91d87f5563423ac8c4918b
+content-type: application/json
+
+{
+    "price": "205"
+}
+
+###
+DELETE http://localhost:3000/api/products/5f91d87f5563423ac8c4918b
